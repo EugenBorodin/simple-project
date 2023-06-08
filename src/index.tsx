@@ -1,19 +1,34 @@
 import React from 'react';
+
 import ReactDOM from 'react-dom/client';
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from 'react-router-dom';
+import App from './componets/App/App';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <BrowserRouter>
+  <App />
+  </BrowserRouter>
+  // <React.StrictMode>
+  //   <Counter />
+  //   <Capital />
+  //   <Sandwich />
+  //   <App />
+  //   <Car color="black" brand="BMW" />
+  //   <Car color="yellow" brand="Ferrari" />
+  //   <Car color="yellow" brand="Submmarine" />
+  //   <Car color="grey" brand="Kia" />
+  //   <Car color="red" brand="Lamborghini" />
+  //   <Car color="violet" brand="Lada" />
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  //   <Instrument title="guitar" dateOfManufacturing="2023-02-02" type="strings" />
+  //   <ParentFlower />
+  //   <Parent />
+  //   <Buttons />
+  //   <Genderidentification />
+  // </React.StrictMode>
+);

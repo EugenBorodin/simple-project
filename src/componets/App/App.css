@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.navlink {
+  color: grey;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.navlink:hover {
+  background-color: yellow;
+}
+
